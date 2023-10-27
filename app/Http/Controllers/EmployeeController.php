@@ -55,7 +55,6 @@ class EmployeeController extends Controller
         //
         $this->validate($request, [
             'first_name'=>'required',
-            'middle_name'=>'required',
             'last_name'=>'required',
             'date_hired'=>'required',
         ]);
@@ -106,6 +105,11 @@ class EmployeeController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $this->validate($request, [
+            'first_name'=>'required',
+            'last_name'=>'required',
+            'date_hired'=>'required',
+        ]);
 
         $check = GABC::fetchEmployeeViaId($id);
 
