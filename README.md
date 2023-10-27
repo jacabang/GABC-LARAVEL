@@ -21,44 +21,141 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+# 👕 GABC Exam
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+I created a simple MVC-like framework to create the application on my own. It is composed of:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Route Processing
+- Controller
+- Repository (Pattern)
+- Model
+- View (Client)
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## ⚙️System Requirement
 
-### Premium Partners
+**Server:** Apache | NGINX, PHP 7, MySQL
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## 🧩 JQuery Library Used
 
-## Contributing
+- [ Bootstrap 5.3 ](https://getbootstrap.com "Bootstrap 5.3")
+- [ Select2 ](https://select2.org/ "Select2")
+- [ DataTable ](https://datatables.net/ "Select2")
+- [ Responsive-Tabs ](https://jellekralt.github.io/Responsive-Tabs "Responsive-Tabs")
+- [ Font-Awesome 4.7 ](https://fontawesome.com/v4/icons/ "Font-Awesome 4.7")
+- [ SweetAlert ](https://sweetalert.js.org/ "SweetAlert")
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+## 🛠 Skills
+PHP, HTML, CSS, Vanila JS, JQuery
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+## 📌 Installation
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- clone the folder project to your PHP server folder lookup.
+Note: Note: In my case, I use [ XAMPP ](https://www.apachefriends.org/ "xampp"), so I just put the project in the ``` htdocs ``` or ``` www ``` if you are using [ WAMP ](https://www.apachefriends.org/ "wamp")
 
-## License
+```
+git clone https://github.com/jacabang/GABC-LARAVEL.git
+```
+- go to the generated project folder then run ``` composer update ```
+- I currently use my local on creating this project and named my database ``` gabc ```, If you wish to change the database name, you may want to look into
+- You may edit the ``` .env ``` file inside the generated folder
+- if no ``` .env ``` you may copy and rename the ``` .env.example ``` or you may create a file with the content:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:/iPmu2Ynb89m9QynKrUPTTMYMv49eNyTV68tbNVHCEU=
+APP_DEBUG=true
+APP_URL=http://localhost
+
+LOG_CHANNEL=stack
+LOG_DEPRECATIONS_CHANNEL=null
+LOG_LEVEL=debug
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=gabc
+DB_USERNAME=root
+DB_PASSWORD=
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+FILESYSTEM_DRIVER=local
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+MEMCACHED_HOST=127.0.0.1
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_MAILER=smtp
+MAIL_HOST=mailhog
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS=null
+MAIL_FROM_NAME="${APP_NAME}"
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+AWS_USE_PATH_STYLE_ENDPOINT=false
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_APP_CLUSTER=mt1
+
+MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+```
+- after you've create a new database and setup the database access on the ``` .env ``` file
+- go to the project root folder, then run the migration
+```
+php artisan migrate
+```
+or
+```
+php artisan migrate:fresh
+```
+- migrate fresh will drop all create table and stored procedure on the data base and run a new
+- Make sure that the folder ``` public/uploads ``` has a write permission.
+- run the application on the cmd ``` php artisan serve ``` it will prompt a local host link e.g. (``` http://127.0.0.1:8000/ ```)
+- on first run you may encounter an error like:
+
+![App Screenshot](https://i.ibb.co/59pY3B7/396594332-1062469878097340-7420290328909237822-n.png)
+
+- on the cmd, in project root folder just run the following lines:
+```
+php artisan key:generate
+php artisan config:cache
+```
+
+
+## 🖼️ Screenshots
+
+### Branch List
+
+![App Screenshot](https://i.ibb.co/1qnkL8N/download.png)
+
+### Branch Form
+
+![App Screenshot](https://i.ibb.co/w6Kq0BG/download-1.png)
+
+### Employee List
+
+
+![App Screenshot](https://i.ibb.co/1002jjF/download-2.png)
+
+### Employee Form
+
+
+![App Screenshot](https://i.ibb.co/HT3yy6y/download-3.png)
