@@ -4,7 +4,7 @@
 	  	<title>@yield('title')</title>
 	  	<meta charset="utf-8">
 	  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 	<link href="{{URL('/')}}/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	 	<link href="{{URL('/')}}/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="{{URL('/')}}/assets/select2/dist/css/select2.min.css" rel="stylesheet" />
 		<link href="{{URL('/')}}/assets/datatable/datatables.min.css" rel="stylesheet">
 		<link href="{{URL('/')}}/assets/css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
@@ -43,7 +43,7 @@
 
 
 		<script src="{{URL('/')}}/assets/js/jquery-3.7.1.min.js"></script>
-		<script src="{{URL('/')}}/assets/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script src="{{URL('/')}}/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 		<script src="{{URL('/')}}/assets/select2/dist/js/select2.min.js"></script>
 		<script src="{{URL('/')}}/assets/datatable/datatables.min.js"></script>
 		<script src="{{URL('/')}}/assets/js/lib/dist/sweetalert.min1.js"></script>
