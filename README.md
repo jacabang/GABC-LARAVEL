@@ -21,20 +21,12 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-# 👕 GABC Exam
-
-I created a simple MVC-like framework to create the application on my own. It is composed of:
-
-- Route Processing
-- Controller
-- Repository (Pattern)
-- Model
-- View (Client)
-
+# 👕 GABC Exam 
 
 ## ⚙️System Requirement
 
 **Server:** Apache | NGINX, PHP 7, MySQL
+**Tool:**  [ Composer ](https://getcomposer.org/download/ "Composer") - dependency management in PHP
 
 ## 🧩 JQuery Library Used
 
